@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: pink;
+
+    }
+    input[type="email"],input[type="password"],input[type="text"]{
+      border: none;
+      border-radius: 5px;
+      padding:10px;
+      padding-right: 100px;
+      
+    }
+    input[type="submit"]{
+      border: none;
+      border-radius: 5px;
+      padding:10px;
+      padding-right: 50px;
+      padding-left:50px;
+    }
+    
+    
+    #login{
+      margin-left: 50px;
+    }
+    #create{
+      margin-left: 50px;
+    }
+    
+    input[type="numbers"]{
+      border: none;
+      border-radius: 5px;
+      padding:10px;
+      padding-right: 100px;
+    }
+  </style>
+</head>
+<body>
+<form action="Table.html" method="">
+  <fieldset>
+  <legend><h1>Register now</h1></legend>
+  <h1 id="login">Login</h1>
+  <label for="text">User name:</label><br>
+  <input type="text" id="text" required name="name"><br><br>
+  <label for="password">Password:</label><br>
+  <input type="password" id="pswd" required max="12" min="6" name="password"><br><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email"  required name="email"><br><br>
+  <label for="telephone">Your Telephone Number:</label>
+  <input type="tel" id="tele" name="tel"><br><br>
+  <label for="gender">Gender:</label>
+  <input type="radio" value="male" name="male">Male
+  <input type="radio" value="female" name="male">Female <br><br>
+
+  <label>Province:</label><br>
+  <input type="radio" id="western" name="title" value="Western province">
+  <label for="western">Western province</label><br>
+  <input type="radio" id="eastern" name="title" value="Eastern province">
+  <label for="eastern">Eastern province</label><br>
+  <input type="radio" id="northern" name="title" value="Northern province">
+  <label for="northern">Northern province</label><br>
+  <input type="radio" id="southern" name="title" value="Southern province">
+  <label for="southern">Southern province</label><br><br>
+  <label for="schools">School code:</label><br>
+  <input type="numbers" id="schools" required name="number"><br><br>
+  <label for="range">How you range this website:</label>
+  <input type="range" min="0" max="100"  name="range"><br><br>
+  <label for="color">Color:</label>
+  <input type="color" name="colour"><br><br>
+  <label for="file"> Choose file:</label>
+  <input type="file" name="file"><br><br>
+  <label for="date">Today's Date</label>
+  <input type="date" name="date"><br><br>
+  <label for="time">Time</label>
+  <input type="time" name="time"><br><br>
+  <select name="color" id="color">
+    <option value="Select any color" name="color">Select any color</option>
+    <option value="white">white</option>
+    <option value="white">Red</option>
+    <option value="white">Blue</option>
+    <option value="white">Orange</option>
+    <option value="white">Green</option>
+  </select><br><br>
+  <label for="textarea">Leave a message for our website:</label><br><br>
+  <textarea id="message" rows="5" cols="50" placeholder="Leave a message to our website" name="message"></textarea><br><br>
+  <label for="agree">Do you agree to all this terms</label>
+  <input type="checkbox" id="checkbox" name="agree"><br><br>
+  <input type="submit" value="Submit" >
+  </fieldset>
+</form>
+</body>
+</html>
